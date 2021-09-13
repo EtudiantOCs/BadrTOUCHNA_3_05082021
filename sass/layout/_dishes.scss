@@ -1,0 +1,78 @@
+/* Dishes cards */
+
+.menu-list__type__dish, .menu-list__type__dish-subtitle, .menu-list__type__dish-title, .menu-list__type__dish-text {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.menu-list__type__dish-text {
+    margin-right: -40px;
+    
+
+    @include desktop {
+        margin-right: 0px;
+    }
+}
+
+.heading .menu-list__type__dish-price {
+    font-weight: 600;
+    font-size: 0.9em;
+    padding-top: 25px;
+}
+
+.check-container {
+    display: flex;
+    margin: -5px -20px -5px 0;
+    position: relative;
+    right: -60px;
+}
+
+.check {
+    width: 70px;
+    height: 100%;
+    background: #99e2d0;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+/* Check animation */
+
+.menu-list__type__dish {
+    
+    .check-container {
+        transition: ease-in-out $fast-duration;
+        transform: translate(0px);     
+
+        i {
+            font-size: 1.5em;
+            transition: linear 500ms;
+            text-align: justify;
+            position: relative;
+            bottom: -20px;
+            left: 20px;
+        }
+    }
+
+    &:hover {
+
+        .menu-list__type__dish-text {
+            margin-right: 0px;
+        }
+
+        .check-container {
+            transform: translate(-60px);
+            transform-origin: left;
+            padding-left: 20px;
+
+            @include desktop {
+                padding-left: 0px;
+            }
+
+            i {
+                transform: rotate(360deg);
+            }
+        }
+    }
+}
