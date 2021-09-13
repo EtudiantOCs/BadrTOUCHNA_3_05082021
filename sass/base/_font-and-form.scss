@@ -1,6 +1,41 @@
+/* CSS Reset */
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     margin: 0;
     overflow-x: hidden;
     user-select: none;
     font-family: 'Roboto';
+
+    main {
+        margin-left: 20px ;
+        margin-right: 20px ;
+        @media (min-width: 1024px) {
+            
+              padding-left: 40px;
+              padding-right: 40px;
+            }
+         
+        @media (min-width: 1224px) {
+            
+              max-width: 2800px;
+              margin: auto;
+              padding-left: 70px;
+              padding-right: 70px;
+            
+            } 
+         }
+    }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer__logo, .menu-list__header-title, .loading {
+    font-family: 'Shrikhand', cursive;
 }
