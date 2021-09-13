@@ -1,0 +1,22 @@
+.search-bar, #search-bar__content {
+    background-color: #eaeaea;
+    color: $fifth;
+}
+
+.search-bar {
+    margin: 0 -20px;
+    padding: 15px 0;
+    text-align: center;
+
+    @include laptop {
+        margin-right: - $big-spacing;
+        margin-left: - $big-spacing;
+    }
+}
+
+#search-bar__content {
+    border-width: 0;
+    font-weight: $medium-weight;
+    font-size: 1em;
+    width: 140px;
+}
