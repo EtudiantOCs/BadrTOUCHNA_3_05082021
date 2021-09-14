@@ -4,6 +4,10 @@
     background: linear-gradient(0.99turn, $primary, $secondary);
 }
 
+@mixin gw-gradient {
+    background: linear-gradient(0.99turn, grey, white);
+}
+
 @mixin card-shadow($shadow) {
     box-shadow: 0px 5px 10px $shadow #9999;
 }
