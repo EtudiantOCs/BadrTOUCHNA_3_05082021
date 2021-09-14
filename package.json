@@ -1,0 +1,19 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "construire site mobile Ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EtudiantOCs/BadrTOUCHNA_3_05082021-.git"
+  },
+  "author": "Badr TOUCHNA",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EtudiantOCs/BadrTOUCHNA_3_05082021-/issues"
+  },
+  "homepage": "https://github.com/EtudiantOCs/BadrTOUCHNA_3_05082021-#readme"
+}
