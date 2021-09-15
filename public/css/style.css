@@ -98,16 +98,12 @@ a {
   z-index: 0;
   background: linear-gradient(0.99turn, #9257da, #fc79d7);
   background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   transform: scale(0);
 }
 
 .card-restaurant__like {
-  -webkit-text-stroke: 1.5px black;
   color: white;
   position: absolute;
-  -webkit-text-fill-color: transparent;
   z-index: 1;
 }
 .card-restaurant__like:hover {
@@ -133,11 +129,11 @@ a {
   border-radius: 50%;
   background: linear-gradient(45deg, transparent, transparent 40%, #f403cc);
   opacity: 0;
-  animation: animate 2s linear;
+  animation: animate 1800ms linear;
 }
 
 .main header, .main main, .main footer {
-  animation: spinner-layer 2000ms;
+  animation: page-layer 1800ms;
 }
 
 .loader:before {
@@ -178,7 +174,7 @@ a {
     opacity: 1;
   }
 }
-@keyframes spinner-layer {
+@keyframes page-layer {
   0%, 100% {
     opacity: 0.6;
   }
