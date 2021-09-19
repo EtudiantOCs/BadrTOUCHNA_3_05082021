@@ -3,10 +3,13 @@
     z-index: 0;
     @include pink-gradient;
     background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     transform: scale(0);
 }
 
 .card-restaurant__like {
+    -webkit-text-stroke: 1.5px black;
     color: white;
     position: absolute;
     z-index: 1;
